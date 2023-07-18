@@ -1,0 +1,29 @@
+#banner {
+  align-items: center;
+  display: flex;
+  height: 190px;
+  justify-content: center;
+  margin: 25px 0px;
+  overflow: hidden;
+  position: relative;
+}
+#banner #bannerTitle {
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 350;
+  text-align: center;
+  z-index: 2;
+}
+#banner #bannerImg {
+  border-radius: 25px;
+  filter: brightness(75%);
+  height: 100%;
+  left: 0;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}/*# sourceMappingURL=Banner.css.map */
