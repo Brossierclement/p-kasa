@@ -1,0 +1,14 @@
+header {
+  align-items: center;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+  gap: 15px;
+}
+header nav a {
+  color: #ff6060;
+  font-size: 24px;
+}/*# sourceMappingURL=Header.css.map */
