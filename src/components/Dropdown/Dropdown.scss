@@ -1,0 +1,22 @@
+#dropdown {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  #dropdownButton {
+    background: #ff6060;
+    border: none;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    width: 100%;
+  }
+  #dropdownP {
+    background: #f1f1f1;
+    width: 100%;
+    p {
+      text-align: center;
+    }
+  }
+}

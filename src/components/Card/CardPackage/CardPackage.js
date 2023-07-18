@@ -1,4 +1,4 @@
-import "../Package/Package.css";
+import "../CardPackage/CardPackage.css";
 import housing from "../../../data/Housing.json";
 import Card from "../Card";
 
