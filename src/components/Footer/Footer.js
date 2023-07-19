@@ -1,10 +1,11 @@
 import "../Footer/Footer.css";
+import whiteKasa from "../../assets/icons/white-kasa.svg";
 
-function Footer({ src, copyright }) {
+function Footer() {
   return (
     <footer id="footer">
-      <img id="footerImg" src={src} alt="logo" />
-      <p id="footerP">{copyright}</p>
+      <img id="footerImg" src={whiteKasa} alt="logo" />
+      <p id="footerP">© 2020 Kasa. All rights reserved</p>
     </footer>
   );
 }

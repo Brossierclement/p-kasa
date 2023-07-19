@@ -1,0 +1,24 @@
+#error {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  #errorB {
+    align-items: center;
+    color: #ff6060;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    #errorImg {
+      margin: 0;
+      text-align: center;
+      width: 35%;
+    }
+    #errorP {
+      font-size: 32px;
+    }
+    #errorLink {
+      color: #ff6060;
+    }
+  }
+}
