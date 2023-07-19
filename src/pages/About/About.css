@@ -1,7 +1,14 @@
-#ddGroup {
-  align-items: center;
+#about {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  height: 100vh;
+}
+#about #ddGroup {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-around;
   margin-bottom: 25px;
 }/*# sourceMappingURL=About.css.map */

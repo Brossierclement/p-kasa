@@ -1,5 +1,7 @@
+$min-body-margin: 20px 50px 0 50px;
+$extra-body-margin: 40px;
 body {
-  margin: 25px 50px;
+  margin: $min-body-margin;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -10,4 +12,13 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media (min-width: 1440px) {
+  body {
+    margin: auto;
+    width: auto;
+    max-width: 1440px;
+    padding: $min-body-margin;
+  }
 }

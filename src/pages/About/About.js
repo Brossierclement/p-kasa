@@ -10,7 +10,7 @@ import details from "../../data/Details.json";
 
 function About() {
   return (
-    <React.Fragment>
+    <div id="about">
       <Header />
       <Banner src={aboutBanner} />
       <div id="ddGroup">
@@ -19,7 +19,7 @@ function About() {
         ))}
       </div>
       <Footer src={whiteKasa} copyright={"© 2020 Kasa. All rights reserved"} />
-    </React.Fragment>
+    </div>
   );
 }
 
