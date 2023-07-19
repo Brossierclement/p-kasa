@@ -1,1 +1,7 @@
-/*# sourceMappingURL=About.css.map */
+#ddGroup {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}/*# sourceMappingURL=About.css.map */

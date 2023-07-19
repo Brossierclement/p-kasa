@@ -7,16 +7,38 @@
 #dropdown #dropdownButton {
   background: #ff6060;
   border: none;
+  border-radius: 5px;
   color: #f1f1f1;
   display: flex;
   justify-content: space-between;
   padding: 5px 10px;
   width: 100%;
+  z-index: 2;
 }
-#dropdown #dropdownP {
-  background: #f1f1f1;
+#dropdown #dropdownButton .icon {
+  transition: transform 0.3s ease-in-out;
+}
+#dropdown #dropdownButton .rotated {
+  transform: rotate(-180deg);
+}
+#dropdown .text {
+  background: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin-top: -3px;
+  transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.3s ease;
   width: 100%;
+  transform-origin: top center;
+  z-index: 1;
 }
-#dropdown #dropdownP p {
-  text-align: center;
+#dropdown .text p {
+  color: #ff6060;
+  margin: 10px;
+}
+#dropdown .visible {
+  max-height: 200px; /* Hauteur maximale de la div text */
+  opacity: 1;
+  transform: scaleY(1);
 }/*# sourceMappingURL=Dropdown.css.map */

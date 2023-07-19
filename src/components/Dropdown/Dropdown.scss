@@ -6,17 +6,41 @@
   #dropdownButton {
     background: #ff6060;
     border: none;
+    border-radius: 5px;
     color: #f1f1f1;
     display: flex;
     justify-content: space-between;
     padding: 5px 10px;
     width: 100%;
-  }
-  #dropdownP {
-    background: #f1f1f1;
-    width: 100%;
-    p {
-      text-align: center;
+    z-index: 2;
+
+    .icon {
+      transition: transform 0.3s ease-in-out;
     }
+    .rotated {
+      transform: rotate(-180deg);
+    }
+  }
+  .text {
+    background: #f6f6f6;
+    border-radius: 0 0 5px 5px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: -3px;
+    transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.3s ease;
+    width: 100%;
+    transform-origin: top center;
+    z-index: 1;
+
+    p {
+      color: #ff6060;
+      margin: 10px;
+    }
+  }
+  .visible {
+    max-height: 200px; /* Hauteur maximale de la div text */
+    opacity: 1;
+    transform: scaleY(1);
   }
 }

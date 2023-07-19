@@ -1,10 +1,20 @@
 #card {
+  background: red;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  cursor: pointer;
   display: inline-block;
   margin: 15px;
-  overflow: hidden;
   position: relative;
   width: 325px;
+}
+#card #cardImg {
+  border-radius: 10px;
+  filter: brightness(85%);
+  height: 300px;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #card #cardTitle {
   color: #f6f6f6;
@@ -15,12 +25,4 @@
   top: 85%;
   width: 50%;
   z-index: 2;
-}
-#card #cardImg {
-  border-radius: 10px;
-  filter: brightness(85%);
-  height: 300px;
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }/*# sourceMappingURL=Card.css.map */
