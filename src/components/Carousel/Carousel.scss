@@ -1,0 +1,10 @@
+#carouselImg {
+  background: red;
+  display: flex;
+  height: 415px;
+  object-fit: cover;
+  overflow: hidden;
+  img {
+    background: rebeccapurple;
+  }
+}

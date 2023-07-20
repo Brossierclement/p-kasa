@@ -1,0 +1,11 @@
+#carouselImg {
+  background: red;
+  display: flex;
+  height: 415px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+#carouselImg img {
+  background: rebeccapurple;
+}/*# sourceMappingURL=Carousel.css.map */

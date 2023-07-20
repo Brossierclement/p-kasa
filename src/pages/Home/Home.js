@@ -14,7 +14,12 @@ function Home() {
       <Banner src={homeBanner} title={"Chez vous, partout et ailleurs"} />
       <div id="cardGroup">
         {housing.map((item) => (
-          <Card key={item.id} cover={item.cover} title={item.title} />
+          <Card
+            key={item.id}
+            id={item.id}
+            cover={item.cover}
+            title={item.title}
+          />
         ))}
       </div>
       <Footer />
