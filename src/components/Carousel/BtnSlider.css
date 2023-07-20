@@ -1,0 +1,9 @@
+.btn-slide {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.btn-slide:hover {
+  transform: scale(1.05);
+}/*# sourceMappingURL=BtnSlider.css.map */

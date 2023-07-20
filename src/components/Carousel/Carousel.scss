@@ -1,10 +1,26 @@
-#carouselImg {
-  background: red;
-  display: flex;
-  height: 415px;
+#carousel {
+  background: lightblue;
   object-fit: cover;
   overflow: hidden;
-  img {
-    background: rebeccapurple;
+  height: 450px;
+  position: relative;
+  #carouselImg {
+    object-fit: cover;
+    img {
+      display: none;
+    }
+    img.active {
+      display: block;
+      width: 100%;
+    }
+  }
+  #carouselBtn {
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
   }
 }

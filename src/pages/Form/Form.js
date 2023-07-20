@@ -18,7 +18,7 @@ function Form() {
   return (
     <>
       <Header />
-      <div id="test">
+      <div>
         <Carousel pictures={card.pictures} />
       </div>
       <Footer />

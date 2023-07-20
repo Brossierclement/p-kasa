@@ -1,11 +1,28 @@
-#carouselImg {
-  background: red;
-  display: flex;
-  height: 415px;
+#carousel {
+  background: lightblue;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+  height: 450px;
+  position: relative;
 }
-#carouselImg img {
-  background: rebeccapurple;
+#carousel #carouselImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#carousel #carouselImg img {
+  display: none;
+}
+#carousel #carouselImg img.active {
+  display: block;
+  width: 100%;
+}
+#carousel #carouselBtn {
+  display: flex;
+  justify-content: space-between;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }/*# sourceMappingURL=Carousel.css.map */
