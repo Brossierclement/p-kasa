@@ -1,21 +1,26 @@
 #carousel {
   background: lightblue;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
   height: 450px;
+  overflow: hidden;
   position: relative;
 }
 #carousel #carouselImg {
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 100%;
+  position: relative;
 }
 #carousel #carouselImg img {
+  height: 100%;
+  left: 0;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
   display: none;
 }
 #carousel #carouselImg img.active {
   display: block;
-  width: 100%;
 }
 #carousel #carouselBtn {
   display: flex;
