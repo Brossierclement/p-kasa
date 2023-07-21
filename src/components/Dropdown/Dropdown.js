@@ -14,6 +14,15 @@ function Dropdown({ title, text, equipments }) {
     setRotated(!isRotated);
   };
 
+  // const material = { equipments };
+  // const equipmento = material.map((equipment) => {
+  //   return <li key={equipment.id}>{equipment}</li>;
+  // });
+
+  // if ({ equipments } !== "") {
+  //   return <ul>{equipmento}</ul>;
+  // }
+
   return (
     <div id="dropdown">
       <button
@@ -32,6 +41,11 @@ function Dropdown({ title, text, equipments }) {
       </button>
       <div className={`text ${toggle ? "visible" : ""}`}>
         <p>{text}</p>
+        {/* si equipements existe */}
+        {equipments &&
+          equipments.map((item) => {
+            return <li>{item}</li>;
+          })}
       </div>
     </div>
   );

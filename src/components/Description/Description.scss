@@ -1,0 +1,42 @@
+#description {
+  color: #ff6060;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+  #descriptionHeader {
+    display: flex;
+    justify-content: space-between;
+    #descriptionTitleLocation {
+      h2,
+      p {
+        margin: 0;
+      }
+    }
+    #descriptionNamePicture {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      p {
+        margin: auto;
+        text-align: end;
+        width: 50%;
+      }
+      img {
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+      }
+    }
+  }
+
+  #descriptionTags {
+    display: flex;
+    gap: 10px;
+  }
+
+  #descriptionDropdown {
+    display: flex;
+    gap: 50px;
+  }
+}

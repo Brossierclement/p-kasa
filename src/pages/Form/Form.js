@@ -4,6 +4,7 @@ import "../Form/Form.css";
 import housing from "../../data/Housing.json";
 import Header from "../../components/Header/Header";
 import Carousel from "../../components/Carousel/Carousel";
+import Description from "../../components/Description/Description";
 import Footer from "../../components/Footer/Footer";
 
 function Form() {
@@ -21,6 +22,7 @@ function Form() {
       <div>
         <Carousel pictures={card.pictures} />
       </div>
+      <Description />
       <Footer />
     </>
   );

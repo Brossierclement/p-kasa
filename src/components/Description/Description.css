@@ -1,0 +1,38 @@
+#description {
+  color: #ff6060;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+#description #descriptionHeader {
+  display: flex;
+  justify-content: space-between;
+}
+#description #descriptionHeader #descriptionTitleLocation h2,
+#description #descriptionHeader #descriptionTitleLocation p {
+  margin: 0;
+}
+#description #descriptionHeader #descriptionNamePicture {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+#description #descriptionHeader #descriptionNamePicture p {
+  margin: auto;
+  text-align: end;
+  width: 50%;
+}
+#description #descriptionHeader #descriptionNamePicture img {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+#description #descriptionTags {
+  display: flex;
+  gap: 10px;
+}
+#description #descriptionDropdown {
+  display: flex;
+  gap: 50px;
+}/*# sourceMappingURL=Description.css.map */
