@@ -30,9 +30,19 @@
     }
   }
 
-  #descriptionTags {
+  #tagAndRating {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    #descriptionTags {
+      display: flex;
+      gap: 10px;
+    }
+
+    #descriptionRating {
+      img {
+        margin-left: 10px;
+      }
+    }
   }
 
   #descriptionDropdown {

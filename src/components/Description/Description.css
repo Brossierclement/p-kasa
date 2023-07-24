@@ -28,9 +28,16 @@
   height: 60px;
   width: 60px;
 }
-#description #descriptionTags {
+#description #tagAndRating {
+  display: flex;
+  justify-content: space-between;
+}
+#description #tagAndRating #descriptionTags {
   display: flex;
   gap: 10px;
+}
+#description #tagAndRating #descriptionRating img {
+  margin-left: 10px;
 }
 #description #descriptionDropdown {
   display: flex;
