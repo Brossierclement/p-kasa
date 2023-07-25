@@ -1,8 +1,13 @@
+#ddGroup {
+  margin: 0 10%;
+}
+
 #dropdown {
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 70%;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
 }
 #dropdown #dropdownButton {
   background: #ff6060;
@@ -11,7 +16,7 @@
   color: #f1f1f1;
   display: flex;
   justify-content: space-between;
-  padding: 5px 10px;
+  padding: 10px 10px;
   width: 100%;
   z-index: 2;
 }
@@ -36,6 +41,9 @@
 #dropdown .text p {
   color: #ff6060;
   margin: 10px;
+}
+#dropdown .text li {
+  margin: 0 0 5px 10px;
 }
 #dropdown .visible {
   max-height: 200px; /* Hauteur maximale de la div text */

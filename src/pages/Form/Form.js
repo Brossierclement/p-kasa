@@ -6,6 +6,7 @@ import Header from "../../components/Header/Header";
 import Carousel from "../../components/Carousel/Carousel";
 import Description from "../../components/Description/Description";
 import Footer from "../../components/Footer/Footer";
+import Error from "../Error/Error";
 
 function Form() {
   const { id } = useParams();
@@ -14,7 +15,7 @@ function Form() {
   const card = housing.find((item) => item.id === id);
 
   if (!card) {
-    return <div>Cette carte n'existe pas.</div>;
+    return <Error />;
   }
   return (
     <>

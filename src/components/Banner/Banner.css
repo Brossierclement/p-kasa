@@ -26,4 +26,15 @@
   top: 0;
   width: 100%;
   z-index: 1;
+}
+
+@media (max-width: 425px) {
+  #banner {
+    height: 110px;
+  }
+  #banner #bannerTitle {
+    font-size: 24px;
+    text-align: start;
+    width: 50%;
+  }
 }/*# sourceMappingURL=Banner.css.map */

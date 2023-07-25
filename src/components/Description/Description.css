@@ -9,6 +9,9 @@
   display: flex;
   justify-content: space-between;
 }
+#description #descriptionHeader #descriptionTitleLocation h2 {
+  font-weight: 400;
+}
 #description #descriptionHeader #descriptionTitleLocation h2,
 #description #descriptionHeader #descriptionTitleLocation p {
   margin: 0;
@@ -36,10 +39,32 @@
   display: flex;
   gap: 10px;
 }
+#description #tagAndRating #descriptionRating {
+  display: flex;
+}
 #description #tagAndRating #descriptionRating img {
-  margin-left: 10px;
+  gap: 10px;
 }
 #description #descriptionDropdown {
   display: flex;
   gap: 50px;
+  list-style-type: none;
+}
+
+@media (max-width: 585px) {
+  #description #descriptionDropdown {
+    flex-direction: column;
+    gap: 25px;
+  }
+  #description #descriptionDropdown button {
+    width: 100%;
+  }
+  #description #tagAndRating {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #description #tagAndRating #descriptionTags {
+    display: flex;
+    gap: 10px;
+  }
 }/*# sourceMappingURL=Description.css.map */

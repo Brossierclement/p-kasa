@@ -8,6 +8,9 @@
     display: flex;
     justify-content: space-between;
     #descriptionTitleLocation {
+      h2 {
+        font-weight: 400;
+      }
       h2,
       p {
         margin: 0;
@@ -37,10 +40,10 @@
       display: flex;
       gap: 10px;
     }
-
     #descriptionRating {
+      display: flex;
       img {
-        margin-left: 10px;
+        gap: 10px;
       }
     }
   }
@@ -48,5 +51,26 @@
   #descriptionDropdown {
     display: flex;
     gap: 50px;
+    list-style-type: none;
+  }
+}
+
+@media (max-width: 585px) {
+  #description {
+    #descriptionDropdown {
+      flex-direction: column;
+      gap: 25px;
+      button {
+        width: 100%;
+      }
+    }
+    #tagAndRating {
+      flex-direction: column;
+      gap: 10px;
+      #descriptionTags {
+        display: flex;
+        gap: 10px;
+      }
+    }
   }
 }

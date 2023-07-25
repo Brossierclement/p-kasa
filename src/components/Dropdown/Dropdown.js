@@ -35,7 +35,11 @@ function Dropdown({ title, text, equipments }) {
         {/* si equipements existe */}
         {equipments &&
           equipments.map((item, index) => {
-            return <li key={index}>{item}</li>;
+            return (
+              <li className="equipements" key={index}>
+                {item}
+              </li>
+            );
           })}
       </div>
     </div>

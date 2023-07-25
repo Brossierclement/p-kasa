@@ -18,4 +18,16 @@
 }
 #header #headerLinks a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 585px) {
+  #header #headerImg {
+    width: 125px;
+  }
+  #header #headerLinks {
+    gap: 30px;
+  }
+  #header #headerLinks a {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=Header.css.map */

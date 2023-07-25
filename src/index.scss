@@ -22,3 +22,9 @@ code {
     padding: $min-body-margin;
   }
 }
+
+@media (max-width: 425px) {
+  body {
+    margin: 20px 25px 0 25px;
+  }
+}

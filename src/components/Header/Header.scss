@@ -19,3 +19,17 @@
     }
   }
 }
+
+@media (max-width: 585px) {
+  #header {
+    #headerImg {
+      width: 125px;
+    }
+    #headerLinks {
+      gap: 30px;
+      a {
+        font-size: 18px;
+      }
+    }
+  }
+}

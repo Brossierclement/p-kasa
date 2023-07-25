@@ -4,17 +4,20 @@ import BtnSlider from "./BtnSlider";
 
 function Carousel({ pictures }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const totalImages = pictures.length;
+
   const goToNextImage = () => {
     console.log("Next button clicked");
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % pictures.length);
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % totalImages);
   };
 
   const goToPrevImage = () => {
     console.log("Prev button clicked");
     setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? pictures.length - 1 : prevIndex - 1
+      prevIndex === 0 ? totalImages - 1 : prevIndex - 1
     );
   };
+
   return (
     <div id="carousel">
       <div id="carouselImg">
@@ -26,6 +29,9 @@ function Carousel({ pictures }) {
             alt={`Pic-ture ${index + 1}`}
           />
         ))}
+      </div>
+      <div id="carouselCounter">
+        {currentImageIndex + 1}/{totalImages}
       </div>
       <div id="carouselBtn">
         <BtnSlider direction={"prev"} handleClick={goToPrevImage} />
