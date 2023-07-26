@@ -1,75 +1,97 @@
 #description {
   color: #ff6060;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
   margin-bottom: 50px;
-  #descriptionHeader {
-    display: flex;
-    justify-content: space-between;
-    #descriptionTitleLocation {
-      h2 {
-        font-weight: 400;
-      }
-      h2,
-      p {
-        margin: 0;
-      }
+
+  #descriptionTitleLocation {
+    grid-row: 1; /* Positionnement dans la première ligne de la grille */
+    grid-column: 1 / span 1;
+    h2 {
+      font-weight: 400;
     }
-    #descriptionNamePicture {
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-      p {
-        margin: auto;
-        text-align: end;
-        width: 50%;
-      }
-      img {
-        border-radius: 50%;
-        height: 60px;
-        width: 60px;
-      }
+    h2,
+    p {
+      margin: 0;
+    }
+  }
+  #descriptionNamePicture {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    grid-row: 1; /* Positionnement dans la deuxième ligne de la grille */
+    grid-column: 2;
+    justify-content: flex-end;
+    p {
+      text-align: end;
+    }
+    img {
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
     }
   }
 
-  #tagAndRating {
+  #descriptionTags {
+    grid-row: 2; /* Positionnement dans la troisième ligne de la grille */
+    grid-column: 1 / span 1;
     display: flex;
-    justify-content: space-between;
-    #descriptionTags {
-      display: flex;
-      gap: 10px;
-    }
-    #descriptionRating {
-      display: flex;
-      img {
-        gap: 10px;
-      }
-    }
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
-  #descriptionDropdown {
+  #descriptionRating {
+    grid-row: 2; /* Positionnement dans la quatrième ligne de la grille */
+    grid-column: 2 / span 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .descriptionDropdown {
+    grid-row: 4; /* Positionné dans la troisième ligne de la grille */
+    grid-column: 1 / span 2;
     display: flex;
     gap: 50px;
     list-style-type: none;
   }
 }
 
-@media (max-width: 585px) {
+@media (max-width: 695px) {
   #description {
-    #descriptionDropdown {
+    grid-template-columns: 1fr;
+    #descriptionTitleLocation {
+      grid-row: 1;
+      grid-column: 1 / span 2; /* Les deux éléments reviennent dans la première colonne pour les écrans étroits */
+    }
+
+    #descriptionNamePicture {
+      grid-row: 3;
+      grid-column: 2;
+      justify-content: center; /* Center elements horizontally */
+    }
+
+    #descriptionTags {
+      grid-row: 2;
+      grid-column: 1 / span 2;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    #descriptionRating {
+      align-items: center;
+      grid-row: 3; /* Positionnement dans la quatrième ligne de la grille pour les écrans étroits */
+      grid-column: 1;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .descriptionDropdown {
       flex-direction: column;
       gap: 25px;
       button {
         width: 100%;
-      }
-    }
-    #tagAndRating {
-      flex-direction: column;
-      gap: 10px;
-      #descriptionTags {
-        display: flex;
-        gap: 10px;
       }
     }
   }
