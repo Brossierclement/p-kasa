@@ -1,8 +1,12 @@
+@charset "UTF-8";
 body {
   margin: 20px 50px 0 50px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh; /* Garantit que le corps occupe au moins toute la hauteur de la fenêtre du navigateur */
+  position: relative; /* Ajoute un contexte de positionnement pour le footer */
+  padding-bottom: 70px;
 }
 
 code {

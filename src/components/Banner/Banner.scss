@@ -10,11 +10,12 @@
     color: #ffffff;
     font-size: 45px;
     font-weight: 350;
+    margin: 0 15px 0 15px;
     text-align: center;
     z-index: 2;
   }
   #bannerImg {
-    border-radius: 25px;
+    border-radius: 15px;
     filter: brightness(75%);
     height: 100%;
     left: 0;
@@ -27,13 +28,31 @@
   }
 }
 
+@media (max-width: 768px) {
+  #banner {
+    #bannerTitle {
+      font-size: 34.5px;
+    }
+  }
+}
+
 @media (max-width: 425px) {
   #banner {
+    display: flex;
     height: 110px;
+    justify-content: flex-start;
     #bannerTitle {
       font-size: 24px;
+      margin-left: 15px;
       text-align: start;
-      width: 50%;
+      width: 185px;
+      word-wrap: break-word;
     }
+  }
+}
+
+@media (max-width: 425px) {
+  #banner {
+    height: 210px;
   }
 }

@@ -49,4 +49,10 @@
   max-height: 200px; /* Hauteur maximale de la div text */
   opacity: 1;
   transform: scaleY(1);
+}
+
+@media (max-width: 425px) {
+  #ddGroup {
+    margin: 0;
+  }
 }/*# sourceMappingURL=Dropdown.css.map */

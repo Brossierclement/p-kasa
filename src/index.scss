@@ -7,6 +7,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh; /* Garantit que le corps occupe au moins toute la hauteur de la fenêtre du navigateur */
+  position: relative; /* Ajoute un contexte de positionnement pour le footer */
+  padding-bottom: 70px;
 }
 
 code {

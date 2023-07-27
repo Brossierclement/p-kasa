@@ -18,6 +18,8 @@ function Carousel({ pictures }) {
     );
   };
 
+  const showArrows = totalImages > 1;
+
   return (
     <div id="carousel">
       <div id="carouselImg">
@@ -33,10 +35,12 @@ function Carousel({ pictures }) {
       <div id="carouselCounter">
         {currentImageIndex + 1}/{totalImages}
       </div>
-      <div id="carouselBtn">
-        <BtnSlider direction={"prev"} handleClick={goToPrevImage} />
-        <BtnSlider direction={"next"} handleClick={goToNextImage} />
-      </div>
+      {showArrows && (
+        <div id="carouselBtn">
+          <BtnSlider direction={"prev"} handleClick={goToPrevImage} />
+          <BtnSlider direction={"next"} handleClick={goToNextImage} />
+        </div>
+      )}
     </div>
   );
 }

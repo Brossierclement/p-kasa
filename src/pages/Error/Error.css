@@ -10,15 +10,23 @@
   flex: 1;
   flex-direction: column;
   justify-content: space-around;
+  margin: 55px 0 55px 0;
 }
 #error #errorB #errorImg {
-  margin: 0;
   text-align: center;
   width: 35%;
 }
 #error #errorB #errorP {
+  text-align: center;
   font-size: 32px;
+  margin: 75px 0 75px 0;
 }
 #error #errorB #errorLink {
   color: #ff6060;
+}
+
+@media (max-width: 425px) {
+  #error #errorB #errorP {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=Error.css.map */
