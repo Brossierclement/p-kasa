@@ -21,9 +21,9 @@
 
 .full-width-footer {
   position: relative; /* Définir la position relative pour centrer correctement */
-  width: 100vw; /* La largeur sera égale à la taille de l'écran */
-  left: 50%; /* Déplacer le footer de 50% vers la droite */
-  transform: translateX(-50%); /* Recentrez le footer en le déplaçant de 50% vers la gauche */
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (max-width: 425px) {
