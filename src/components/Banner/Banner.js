@@ -1,9 +1,9 @@
 import "../Banner/Banner.css";
 
-function Banner({ src, title }) {
+function Banner({ src, children }) {
   return (
     <section id="banner">
-      <h1 id="bannerTitle">{title}</h1>
+      {children}
       <img id="bannerImg" src={src} alt="banner" />
     </section>
   );

@@ -1,4 +1,3 @@
-import React, { Fragment } from "react";
 import { useParams } from "react-router-dom";
 import "../Form/Form.css";
 import housing from "../../data/Housing.json";
@@ -17,6 +16,7 @@ function Form() {
   if (!card) {
     return <Error />;
   }
+  
   return (
     <>
       <Header />

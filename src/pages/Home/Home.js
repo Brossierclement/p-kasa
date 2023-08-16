@@ -11,7 +11,9 @@ function Home() {
   return (
     <React.Fragment>
       <Header />
-      <Banner src={homeBanner} title={"Chez vous, partout et ailleurs"} />
+      <Banner src={homeBanner}>
+        <h1 id="bannerTitle">Chez vous, partout et ailleurs</h1>
+      </Banner>
       <div id="cardGroup">
         {housing.map((item) => (
           <Card
