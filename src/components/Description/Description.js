@@ -1,6 +1,6 @@
 import React from "react";
 import "../Description/Description.css";
-import Dropdown from "../Dropdown/Dropdown";
+import SmallDropdown from "../SmallDropdown/SmallDropdown"
 import Tag from "./Tag";
 import Stars from "./Stars";
 import redStar from "../../assets/icons/red-star.png";
@@ -26,8 +26,8 @@ function Description({card}) {
         <Stars star={greyStar} rating={card.rating} filledStar={redStar} />
       </div>
       <div className="descriptionDropdown">
-        <Dropdown title="Description" text={card.description} />
-        <Dropdown title="Equipements" equipments={card.equipments} />
+        <SmallDropdown title="Description" text={card.description} />
+        <SmallDropdown title="Equipements" equipments={card.equipments} />
       </div>
     </div>
   );
