@@ -31,27 +31,45 @@
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 97%;
 }
 #carousel #carouselCounter {
   position: absolute;
   bottom: 10px;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   left: 50%;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 5px 10px;
-  border-radius: 5px;
+  line-height: 25px;
   transform: translate(-50%);
 }
 
+@media screen and (max-width: 1024px) {
+  #carousel #carouselBtn img {
+    height: 50px;
+  }
+}
 @media screen and (max-width: 768px) {
   #carousel {
     height: 300px;
+  }
+  #carousel #carouselBtn img {
+    height: 40px;
   }
 }
 @media screen and (max-width: 480px) {
   #carousel {
     height: 200px;
+  }
+  #carousel #carouselBtn img {
+    height: 30px;
+  }
+  #carousel #carouselCounter {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  #carousel #carouselBtn img {
+    height: 20px;
   }
 }/*# sourceMappingURL=Carousel.css.map */
