@@ -34,4 +34,40 @@
   .card-link #card #cardImg {
     height: 265px;
   }
+}
+@media (max-width: 412px) {
+  .card-link #card {
+    margin: 0;
+    max-width: 95%;
+  }
+  .card-link #card #cardImg {
+    height: 265px;
+  }
+}
+@media (max-width: 400px) {
+  .card-link #card {
+    margin: 0;
+    max-width: 92%;
+  }
+  .card-link #card #cardImg {
+    height: 265px;
+  }
+}
+@media (max-width: 388px) {
+  .card-link #card {
+    margin: 0;
+    max-width: 90%;
+  }
+  .card-link #card #cardImg {
+    height: 265px;
+  }
+}
+@media (max-width: 375px) {
+  .card-link #card {
+    margin: 0;
+    max-width: 85%;
+  }
+  .card-link #card #cardImg {
+    height: 265px;
+  }
 }/*# sourceMappingURL=Card.css.map */

@@ -38,3 +38,51 @@
     }
   }
 }
+
+@media (max-width: 412px) {
+  .card-link {
+    #card {
+      margin: 0;
+      max-width: 95%;
+      #cardImg {
+        height: 265px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .card-link {
+    #card {
+      margin: 0;
+      max-width: 92%;
+      #cardImg {
+        height: 265px;
+      }
+    }
+  }
+}
+
+@media (max-width: 388px) {
+  .card-link {
+    #card {
+      margin: 0;
+      max-width: 90%;
+      #cardImg {
+        height: 265px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .card-link {
+    #card {
+      margin: 0;
+      max-width: 85%;
+      #cardImg {
+        height: 265px;
+      }
+    }
+  }
+}
