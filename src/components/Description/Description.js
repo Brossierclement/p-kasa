@@ -1,17 +1,12 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import "../Description/Description.css";
-import housing from "../../data/Housing.json";
 import Dropdown from "../Dropdown/Dropdown";
 import Tag from "./Tag";
 import Stars from "./Stars";
 import redStar from "../../assets/icons/red-star.png";
 import greyStar from "../../assets/icons/grey-star.png";
 
-function Description() {
-  const { id } = useParams();
-  console.log({ id });
-  const card = housing.find((item) => item.id === id);
+function Description({card}) {
   return (
     <div id="description">
       <div id="descriptionTitleLocation">

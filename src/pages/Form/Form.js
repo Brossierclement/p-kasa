@@ -10,20 +10,19 @@ import Error from "../Error/Error";
 function Form() {
   const { id } = useParams();
   console.log({ id });
-
   const card = housing.find((item) => item.id === id);
 
   if (!card) {
     return <Error />;
   }
-  
+
   return (
     <>
       <Header />
       <div>
         <Carousel pictures={card.pictures} />
       </div>
-      <Description />
+      <Description card={card} />
       <Footer />
     </>
   );

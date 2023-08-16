@@ -14,10 +14,14 @@
 #header #headerLinks a {
   color: #ff6060;
   font-size: 24px;
-  text-decoration: none;
 }
-#header #headerLinks a:hover {
+
+.underline {
   text-decoration: underline;
+}
+
+.noUnderline {
+  text-decoration: none;
 }
 
 @media (max-width: 585px) {

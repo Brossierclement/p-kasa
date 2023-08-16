@@ -10,7 +10,7 @@ import housing from "../../data/Housing.json";
 function Home() {
   return (
     <React.Fragment>
-      <Header />
+      <Header active={"Home"} />
       <Banner src={homeBanner}>
         <h1 id="bannerTitle">Chez vous, partout et ailleurs</h1>
       </Banner>

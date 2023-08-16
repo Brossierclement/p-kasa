@@ -11,7 +11,7 @@ import details from "../../data/Details.json";
 function About() {
   return (
     <div id="about">
-      <Header />
+      <Header active={"About"} />
       <Banner src={aboutBanner} />
       <div id="ddGroup">
         {details.map((item) => (
