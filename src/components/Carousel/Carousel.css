@@ -33,6 +33,9 @@
   transform: translate(-50%, -50%);
   width: 97%;
 }
+#carousel #carouselBtn img {
+  height: 70px;
+}
 #carousel #carouselCounter {
   position: absolute;
   bottom: 10px;

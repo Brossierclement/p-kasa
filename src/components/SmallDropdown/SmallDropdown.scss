@@ -15,7 +15,7 @@
       color: #f1f1f1;
       display: flex;
       font-size: 15px;
-      height: 30px;
+      height: 42.5px;
       justify-content: space-between;
       line-height: 18px;
       padding: 10px 10px;
@@ -63,9 +63,25 @@
     }
   }
   
-  @media (max-width: 425px) {
-    #ddGroup {
-      margin: 0;
+@media (max-width: 1024px) {
+  #smallDropdown {
+    #smallDropdownButton {
+      height: 35px;
     }
   }
+}
+
+@media (max-width: 768px) {
+  #smallDropdown {
+    #smallDropdownButton {
+      height: 30px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  #ddGroup {
+    margin: 0;
+  }
+}
   

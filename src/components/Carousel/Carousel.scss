@@ -30,6 +30,9 @@
     top: 50%;
     transform: translate(-50%, -50%);
     width: 97%;
+    img {
+      height: 70px;
+    }
   }
   #carouselCounter {
     position: absolute;
