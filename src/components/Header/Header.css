@@ -5,7 +5,7 @@
   justify-content: space-between;
 }
 #header #headerImg {
-  width: 210px;
+  width: 200px;
 }
 #header #headerLinks {
   display: flex;
@@ -24,6 +24,11 @@
   text-decoration: none;
 }
 
+@media (max-width: 1024px) {
+  #header #headerImg {
+    width: 175px;
+  }
+}
 @media (max-width: 585px) {
   #header #headerImg {
     width: 125px;

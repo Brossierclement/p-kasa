@@ -8,5 +8,11 @@
 #tags #tag {
   align-items: center;
   display: flex;
-  height: 100%;
+  padding-top: 2px;
+}
+
+@media (max-width: 888px) {
+  #tags #tag {
+    padding-bottom: 3px;
+  }
 }/*# sourceMappingURL=Tag.css.map */
