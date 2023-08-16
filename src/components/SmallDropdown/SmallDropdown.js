@@ -15,9 +15,9 @@ function SmallDropdown({ title, text, equipments }) {
   };
 
   return (
-    <div id="dropdown">
+    <div id="smallDropdown">
       <button
-        id="dropdownButton"
+        id="smallDropdownButton"
         onClick={() => {
           handleToggle();
           handleClick();

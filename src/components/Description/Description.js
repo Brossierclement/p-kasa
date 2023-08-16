@@ -7,6 +7,8 @@ import redStar from "../../assets/icons/red-star.png";
 import greyStar from "../../assets/icons/grey-star.png";
 
 function Description({card}) {
+  let firstname, lastname;
+  [firstname, lastname]  = card.host.name.split(" ",2);
   return (
     <div id="description">
       <div id="descriptionTitleLocation">
@@ -14,7 +16,10 @@ function Description({card}) {
         <p>{card.location}</p>
       </div>
       <div id="descriptionNamePicture">
-        <p>{card.host.name}</p>
+        <div>
+        <p>{firstname}</p>
+        <p>{lastname}</p>
+        </div>
         <img src={card.host.picture} alt="profil" />
       </div>
       <div id="descriptionTags">

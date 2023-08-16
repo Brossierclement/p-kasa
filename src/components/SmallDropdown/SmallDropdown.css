@@ -2,14 +2,14 @@
   margin: 0 10%;
 }
 
-#dropdown {
+#smallDropdown {
   align-items: center;
   display: flex;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
   width: 100%;
 }
-#dropdown #dropdownButton {
+#smallDropdown #smallDropdownButton {
   align-items: center;
   background: #ff6060;
   border: none;
@@ -24,14 +24,14 @@
   width: 100%;
   z-index: 2;
 }
-#dropdown #dropdownButton .icon {
+#smallDropdown #smallDropdownButton .icon {
   height: 11px;
   transition: transform 0.3s ease-in-out;
 }
-#dropdown #dropdownButton .rotated {
+#smallDropdown #smallDropdownButton .rotated {
   transform: rotate(-180deg);
 }
-#dropdown .text {
+#smallDropdown .text {
   background: #f6f6f6;
   border-radius: 0 0 5px 5px;
   max-height: 0;
@@ -44,18 +44,18 @@
   transform-origin: top center;
   z-index: 1;
 }
-#dropdown .text p {
+#smallDropdown .text p {
   color: #ff6060;
   font-size: 14px;
   line-height: 17px;
   margin: 10px 15px;
 }
-#dropdown .text li {
+#smallDropdown .text li {
   font-size: 14px;
   line-height: 17px;
   margin-left: 15px;
 }
-#dropdown .visible {
+#smallDropdown .visible {
   max-height: 200px; /* Hauteur maximale de la div text */
   opacity: 1;
   transform: scaleY(1);
@@ -65,4 +65,4 @@
   #ddGroup {
     margin: 0;
   }
-}/*# sourceMappingURL=smallDropdown.css.map */
+}/*# sourceMappingURL=SmallDropdown.css.map */
