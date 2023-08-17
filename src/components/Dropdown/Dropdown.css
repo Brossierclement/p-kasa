@@ -15,7 +15,7 @@
   border-radius: 5px;
   color: #f1f1f1;
   display: flex;
-  height: 35px;
+  height: 37.5px;
   justify-content: space-between;
   padding: 0 12.5px;
   width: 100%;
@@ -55,7 +55,7 @@
   margin: 0 0 5px 10px;
 }
 #dropdown .visible {
-  max-height: 200px; /* Hauteur maximale de la div text */
+  max-height: 250px; /* Hauteur maximale de la div text */
   opacity: 1;
   transform: scaleY(1);
 }
