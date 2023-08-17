@@ -12,6 +12,7 @@
   grid-column: 1/span 1;
 }
 #description #descriptionTitleLocation h2 {
+  font-size: 36px;
   font-weight: 400;
 }
 #description #descriptionTitleLocation h2,
@@ -84,9 +85,15 @@
   }
   #description .descriptionDropdown {
     flex-direction: column;
-    gap: 25px;
+    gap: 10px;
   }
   #description .descriptionDropdown button {
     width: 100%;
+  }
+}
+@media (max-width: 695px) {
+  #description #descriptionTitleLocation h2 {
+    font-size: 22px;
+    font-weight: 400;
   }
 }/*# sourceMappingURL=Description.css.map */

@@ -64,4 +64,9 @@
   #ddGroup {
     margin: 0;
   }
+}
+@media (max-width: 375px) {
+  #dropdown #dropdownButton {
+    height: 32.5px;
+  }
 }/*# sourceMappingURL=Dropdown.css.map */

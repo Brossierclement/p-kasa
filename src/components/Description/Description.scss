@@ -10,6 +10,7 @@
     grid-row: 1; /* Positionnement dans la première ligne de la grille */
     grid-column: 1 / span 1;
     h2 {
+      font-size: 36px;
       font-weight: 400;
     }
     h2,
@@ -90,10 +91,22 @@
 
     .descriptionDropdown {
       flex-direction: column;
-      gap: 25px;
+      gap: 10px;
       button {
         width: 100%;
       }
     }
   }
 }
+
+
+@media (max-width: 695px) {
+  #description {
+    #descriptionTitleLocation {
+      h2 {
+        font-size: 22px;
+        font-weight: 400;
+      }
+    }
+  }
+ }
