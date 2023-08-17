@@ -1,6 +1,7 @@
 #error {
   display: flex;
   flex-direction: column;
+  font-family: "Montserrat", sans-serif;
   height: 100vh;
   #errorB {
     align-items: center;
@@ -12,15 +13,46 @@
     margin: 55px 0 55px 0;
     #errorImg {
       text-align: center;
-      width: 35%;
+      width: 600px;
     }
     #errorP {
       text-align: center;
-      font-size: 32px;
-      margin: 75px 0 75px 0;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 51.34px;
+      margin: 0;
     }
     #errorLink {
       color: #ff6060;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 19px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #error {
+    #errorB {
+      #errorImg {
+        width: 500px;
+      }
+      #errorP {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #error {
+    #errorB {
+      #errorImg {
+        width: 400px;
+      }
+      #errorP {
+        font-size: 25px;
+      }
     }
   }
 }
@@ -28,8 +60,27 @@
 @media (max-width: 425px) {
   #error {
     #errorB {
+      #errorImg {
+        width: 250px;
+      }
       #errorP {
         font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  #error {
+    #errorB {
+      #errorImg {
+        width: 200px;
+      }
+      #errorP {
+        font-size: 18px;
+      }
+      #errorLink {
+        font-size: 14px;
       }
     }
   }
