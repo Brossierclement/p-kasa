@@ -9,23 +9,55 @@
 .card-link #card #cardImg {
   border-radius: 10px;
   box-shadow: 3px 3px 3px rgb(202, 202, 202);
-  filter: brightness(85%);
   height: 375px;
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
   width: 100%;
 }
 .card-link #card #cardTitle {
   color: #f6f6f6;
-  font-size: 12px;
-  margin: 0px 0px 0px 10px;
+  bottom: 2.5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  margin: 15px 10px;
+  opacity: 1;
   position: absolute;
   text-align: start;
-  top: 85%;
-  width: 50%;
-  z-index: 2;
+  width: 75%;
+}
+.card-link #card #overlay {
+  background: linear-gradient(#FFF, #000);
+  border-radius: 10px;
+  font-size: 12px;
+  height: 100%;
+  opacity: 0.4;
+  position: absolute;
+  text-align: start;
+  top: 0;
+  width: 100%;
 }
 
+@media (max-width: 465px) {
+  .card-link #card {
+    margin: 0;
+    max-width: 97%;
+  }
+  .card-link #card #cardImg {
+    height: 265px;
+  }
+}
+@media (max-width: 440px) {
+  .card-link #card {
+    margin: 0;
+    max-width: 90%;
+  }
+  .card-link #card #cardImg {
+    height: 265px;
+  }
+}
 @media (max-width: 425px) {
   .card-link #card {
     margin: 0;
